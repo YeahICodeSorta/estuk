@@ -11,6 +11,7 @@ class BooksController < ApplicationController
   # GET /books/1
   # GET /books/1.json
   def show
+  
   end
 
   # GET /books/new
@@ -36,9 +37,8 @@ class BooksController < ApplicationController
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
-    end
+   end
   end
-
   # PATCH/PUT /books/1
   # PATCH/PUT /books/1.json
   def update
